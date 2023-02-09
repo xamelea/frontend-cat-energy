@@ -1,0 +1,164 @@
+/* main styles  */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    overflow-x: hidden;
+    background-color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+  
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../res/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 100% -100%;
+    background-size: 720px 696px;
+    min-height: 696px;
+    margin-left: 110px;
+}
+
+/* styling upper header part  */
+
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 110px;
+    margin-top: 53px;
+}
+
+.logo-desktop img{
+    width: 202px;
+    height: 59px;
+    margin-left: 80px;
+}
+
+.menu-desktop a{
+    margin-right: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.menu-desktop a:nth-child(3){
+    margin-right: 0px;
+}
+
+/*  styling down header part  */
+
+.down {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.intro h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    width: 414px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    margin-top: 110px;
+    margin-left: 80px;
+}
+
+.intro h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+    margin-left: 80px;
+}
+
+.green-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 244px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 80px;
+}
+
+.can {
+    top: 143px;
+    right: 330px;
+    width: 552px;
+    height: 499px;
+    position: absolute;
+}
+
+/* animations */
+
+.green-button {
+    background: #68B738;
+    color: white;
+    border: 2px solid #68B738;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.green-button:hover {
+    background: white;
+    color: #68B738;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
